@@ -6,12 +6,16 @@
     <style>
 body {background-color: black;}
 h1   {color: white;}
-p    {color: white;}
+p   {color: white;}
+p   {color: white;}
 li    {color: white;}
-</style>
+.OddRow {background-color: lightblue;}
+.EvenRow {background-color: grey;}
+ul    {color: white;}
+    </style>
         <h1 style="text-align:center;font-size: 90px">My First Project</h1>
-        <p><i>My</i> <b>first</b> paragraph.
-        <hr><i>My</i> <b>first</b> <a href="https://www.youtube.com/watch?v=fC7oUOUEEi4">link</a></p>
+        <hr><p><i>My</i> <b>first</b> paragraph.
+        <i>My</i> <b>first</b> <a href="https://www.youtube.com/watch?v=fC7oUOUEEi4">link</a></p>
         <img src="images/cupabobble.png" width="150" height="150">
         <a href="https://en.wikipedia.org/wiki/Dog"><img src="images/NoticeMEsenpai.jpg" width="150" height="150"></a>
         <ul>
@@ -21,7 +25,7 @@ li    {color: white;}
             <li style="color:purple">Chicks</li>
             <li style="color:darkgreen">Babies</li>
         </ul>
-    List of Greetings
+        <ul>List of Greetings
             <ol>
                 <li>Hi
                 <li>Hello
@@ -30,7 +34,7 @@ li    {color: white;}
                 <li>Sup</li>
             </ol>
         </ul>
-        List of Fruits and Vegetables
+        <ul>List of Fruits and Vegetables</ul>
             <ol><li>Fruit
                     <ul>
                         <li>Apples</li>
@@ -44,7 +48,7 @@ li    {color: white;}
                         <li>Corns</li>
                     </ul>
             </ol>
-            More in Depth List of Fruits and Vegetables
+        <ul>More in Depth List of Fruits and Vegetables</ul>
             <ol><li>Fruit
                     <ul>
                         <li>Apples</li>
@@ -61,33 +65,35 @@ li    {color: white;}
                     </ul>
             </ol>
             <table border="3px">
-                <tr style="background:lightblue">
+                <tr class="OddRow">
                     <th></th>
                     <th>Apple</th>
                     <th>Bananna</th>
                     <th>Grapes</th>
                     <th>Orange</th>
                 </tr>
+                <tr class="EvenRow">
                     <td>Year 2013</td>
                     <td>300</td>
                     <td>200</td>
                     <td>150</td>
                     <td>130</td>
-                <tr style="background:grey">
+                </tr>
+                <tr class="OddRow">
                     <td>Year 2012</td>
                     <td>150</td>
                     <td>130</td>
                     <td>120</td>
                     <td>220</td>
                 </tr>
-                <tr>
+                <tr class="EvenRow">
                     <td>Year 2011</td>
                     <td>100</td>
                     <td>120</td>
                     <td>160</td>
                     <td>200</td>
                 </tr>
-                <tr style="background:grey">
+                <tr class="OddRow">
                     <td>Year 2010</td>
                     <td>200</td>
                     <td>300</td>
