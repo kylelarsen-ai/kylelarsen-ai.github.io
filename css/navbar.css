@@ -1,0 +1,32 @@
+            .navbar{
+                background-color: purple;
+                overflow: hidden;
+                padding: 0px;
+            }
+            .navbar li{
+                list-style-type: none;
+                float: left;
+                color: white
+            }
+            .navbar a{
+                color: inherit;
+                text-decoration: none;
+                font-size: 24px;
+                padding: 16px;
+                display: inline-block;
+            }
+            .navbar li:hover {
+                background-color: pink;
+            }
+            .dropdown-content li {
+                    float: none;
+            }
+            .dropdown-content {
+                    padding: 0px;
+                    background-color: purple;
+                    display: none;
+            }
+            .dropdown:hover .dropdown-content{
+                display: block;
+                position: absolute;
+            }

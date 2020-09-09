@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
+        <title>Dark</title>
+        <link rel="stylesheet" type="text/css" href="css/navbar.css" />
     </head>
-    <style>
-body {background-color: black;}
-h1   {color: white;}
-p   {color: white;}
-p   {color: white;}
-li    {color: white;}
-.OddRow {background-color: lightblue;}
-.EvenRow {background-color: grey;}
-ul    {color: white;}
-    </style>
+        <style>
+            body {background-color: black;}
+            h1   {color: white;}
+            p   {color: white;}
+            p   {color: white;}
+            li    {color: white;}
+            .OddRow {background-color: lightblue;}
+            .EvenRow {background-color: grey;}
+            ul    {color: white;}
+        </style>
+    <body>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+            <li class="dropdown">
+                <a href="#">Projects</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
+                    <li><a href="#">Project 3</a></li>
+                    <li><a href="#">Project 4</a></li>
+                    <li><a href="#">Project 5</a></li>
+                </ul>
+            </li>
+        </ul>
         <h1 style="text-align:center;font-size: 90px">My First Project</h1>
         <hr><p><i>My</i> <b>first</b> paragraph.
         <i>My</i> <b>first</b> <a href="https://www.youtube.com/watch?v=fC7oUOUEEi4">link</a></p>
