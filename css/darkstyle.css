@@ -1,0 +1,32 @@
+body 
+{
+    background-color: black;
+    color: white;
+}
+
+.h1 
+{
+    color: purple;
+}
+
+p
+{
+    background-color: black;
+    color: white;
+}
+
+ul, ol, li
+{
+    background-color: black;
+    color: white;
+}
+
+.OddRow 
+{
+    background-color: lightblue;
+}
+
+.EvenRow 
+{
+    background-color: grey;
+}

@@ -30,3 +30,6 @@
                 display: block;
                 position: absolute;
             }
+            .navbar .active{
+                background-color: pink
+            }
