@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>lil secret</title>
+        <title>Text Adventure</title>
         <link rel="stylesheet" type="text/css" href="css/navbar.css"  />
         <link rel="stylesheet" type="text/css" href="css/navbar.css"  /> 
     </head>
@@ -19,6 +19,9 @@
                 height: 100%;
                 width: 56%;
                 float: left;
+                display: flex;
+                align-items: center;
+                justify-content: center;
  
             }
             #right_pane{
@@ -26,6 +29,7 @@
                 height: 100%;
                 width: 44%;
                 float: left;
+                color: red;
  
             }
             #story_text{
@@ -33,7 +37,24 @@
                 height: 80%;
             }
             #button_choices{
- 
+                background-color: pink;
+                height: 20%;
+            }
+            #story_img{
+                max-height: 100%;
+                max-width: 100%;
+                width: auto;
+                height: auto;
+            }
+
+            .buttons{
+                text-decorations: none;
+                color: white;
+                background-color: black;
+                padding: 10px;
+                border-radius: 8px;
+                font-size: 16;
+                margin: 10px;
             }
     </style>
     <body class="backdrop">
@@ -60,10 +81,21 @@
         </ul>
  
     <div id="container">
-        <div id="left_pane"></div>
+        <div id="left_pane">
+            <img id="story_img" src="images/epicdogzoom.jpg"/>
+        
+        </div>
         <div id="right_pane">
-            <div id="story_text"></div>
-            <div id="button_choices"></div>           
+            <div id="story_text">
+                <p>Welcome to the Ice Cream shop</p>
+                <p>It is the year 2020</p>
+                <p>Do you like Ice Cream?</p>
+            </div>
+            <div id="button_choices">
+            
+                <a class="buttons" href="">Yes</a>
+                <a class="buttons" href="">No</a>
+            </div>           
         </div>
     </div>
     </body>
