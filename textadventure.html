@@ -120,7 +120,34 @@
             p1.innerHTML = "This is my dog Tesla and she welcomes you to a short Text Adventure.";
             
         }
+
+        function stayInSchool(){
+            imgsrc="images/skull.png";
+            p1.innerHTML = "Begin training for powers"
+            p2.innerHTML = "Meet other kids at the Academy"
+            p3.innerHTML = "Would you like to tryto escape?"
+            b1.innerHTML = "Yes"
+            b2.innerHTML = "No"
+            b3.innerHTML = "Maybe"
+        }
     
+
+        //////State Machine
+        function bclick(button){
+            if (state == "intro"){
+                if(button == 1){
+                    stayInSchool();
+                    state="stayInSchool"
+                }
+                else if(button == 2){
+                    goToCamp();
+                    state = "goToCamp"
+                }
+            }
+        }
+
+
+
     </script>
 
     </body>
