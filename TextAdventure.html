@@ -2,13 +2,13 @@
 <html>
 <head>
 <title>Text Adventure</title>
-
+ 
         <title>Text Adventure</title>
         <link rel="stylesheet" type="text/css" href="css/navbar.css"  />
         <link rel="stylesheet" type="text/css" href="css/navbar.css"  /> 
-
+ 
    <style>
-
+ 
         #container{
           position:absolute;
           top:80px;
@@ -24,13 +24,13 @@
             display:flex;
             align-items: center;
             justify content: center;
-            background-color:#c4dbff;
+            background-color:black;
         }
         #rightpane{
             width:44%;
             height:100%;
             float:left;
-            background-color:blue;
+            background-color:yellow;
         }
         #storytext{
             position:absolute;
@@ -83,7 +83,7 @@
         width: 94%; 
     }
    </style>
-
+ 
 </head>
     <body>
         <ul class="navbar">
@@ -93,24 +93,24 @@
             <li><a href="contactme.html">Contact Me</a></li>
             <li>
                 <li class="dropdown">
-
+ 
                 <div>Projects</div>
-
+ 
                 <ul class="dropdown-content">
                      <li class="active"><a href="textadventure.html">Text Adventure</a></li>
                         <li><a href="project2.html">python project</a></li>
                         <li><a href="project3.html">project3</a></li>
                 </ul>
-
-
+ 
+ 
             </li>
         </ul>
-
+ 
          <div id='container'>
         <div id='leftpane'>
-            <img id='storyimg' src="images/cat.png">
+            <img id='storyimg' src="images/Cat.png">
         </div>
-
+ 
             <div id='rightpane'>
                 <div id='storytext'>
                     <p id="ptext1">oof</p>
@@ -118,7 +118,7 @@
                     <p id="ptext3"></p>
                     <p id="ptext4"></p>
                 </div>
-
+ 
                 <div id='choices'>
                     <a id='b1' onclick= "bclick(1)" href='#'> Choice 1</a>
                     <a id='b2' onclick= "bclick(2)" href='#'> Choice 2</a>
@@ -128,7 +128,7 @@
                 </div>
             </div>
         </div>
-
+ 
         <script>
         
         var pic = document.getElementById('storyimg');
@@ -143,10 +143,10 @@
         var b5 = document.getElementById('b5');
         var state = "intro";
         intro();
-
+ 
     function intro(){
-        pic.src = "images/bank.jpg";
-        ptext1.innerHTML = "James:Hi I'm James, wanna be friends?";
+        pic.src = "images/james.jpg";
+        ptext1.innerHTML = "James: Hi I'm James, wanna be friends?";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
@@ -159,9 +159,9 @@
         b5.style.display = "none";
     }
         
-    function entrance(){
-        pic.src = "images/trans.jpg";
-        ptext1.innerHTML = "James:Alright then where do you wanna go?";
+    function meeting(){
+        pic.src = "images/jamesdown.PNG";
+        ptext1.innerHTML = "James: Alright then where do you wanna go?";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
@@ -174,10 +174,10 @@
         b4.style.display = "none";
         b5.style.display = "none"; 
     }
-
-    function firstEntrance(){
-       pic.src = "images/walk.jpg";
-        ptext1.innerHTML = "James:Not a bad choice, the veiw is pretty nice.";
+ 
+    function locationPlace(){
+       pic.src = "images/park.jpg";
+        ptext1.innerHTML = "James: Not a bad choice, the view is pretty nice.";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
         ptext4.innerHTML = "Where will you take James next?";
@@ -191,10 +191,10 @@
         b4.style.display = "block";
         b5.style.display = "none";
     }
-
-    function weapon(){
-       pic.src = "images/window.jpg";
-        ptext1.innerHTML = "James:Man I was getting thirsty after all that walking, I'm glad we found this water fountain.";
+ 
+    function activity(){
+       pic.src = "images/fountain.jpg";
+        ptext1.innerHTML = "James: Man I was getting thirsty after all that walking, I'm glad we found this water fountain.";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
         ptext4.innerHTML = "Okay... now what?";
@@ -208,15 +208,15 @@
         b4.style.display = "block";
         b5.style.display = "none";
     }
-
-    function enteringBank(){
-       pic.src = "images/apple.jpg";
-        ptext1.innerHTML = "James:So what movie did you have in mind?";
+ 
+    function movieTime(){
+       pic.src = "images/movies.jpg";
+        ptext1.innerHTML = "James: So what movie did you have in mind?";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
         ptext4.innerHTML = "I hope you had a movie in mind.";
-        b1.innerHTML = "Ask another friend";
-        b2.innerHTML= "Admit that you didn't have a movie in mind";
+        b1.innerHTML = "Admit that you didn't have a movie in mind";
+        b2.innerHTML= "Ask another friend for a recommendation";
         b3.innerHTML= "Watch The Lego Movie";
         b4.innerHTML= "Watch Us";
         b1.style.display = "block";
@@ -225,12 +225,12 @@
         b4.style.display = "block";
         b5.style.display = "none";   
     }
-        function whatNow(){
-       pic.src = "images/tpose.jpg";
-        ptext1.innerHTML = "Who are you going to ask for movie reccomendations?";
+        function askWho(){
+       pic.src = "images/phonecontact.jpg";
+        ptext1.innerHTML = "You scroll through your contacts for 20 minutes looking for someone intelligent and trustworthy to ask for a movie reccomendation";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
-        ptext4.innerHTML = "I reccomend asking Tom";
+        ptext4.innerHTML = "Who are you going to ask for movie recommendations?";
         b1.innerHTML = "Ask Leo";
         b2.innerHTML= "Ask Tom";
         b3.innerHTML= "Ask Miranda";
@@ -241,8 +241,8 @@
         b5.style.display = "none";
         
     }
-    function insideNow(){
-       pic.src = "images/hiding.jpg";
+    function askTom(){
+       pic.src = "images/threat.PNG";
         ptext1.innerHTML = "Tom said you need to get back home before you mom find out that you stayed out this late";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -257,9 +257,9 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-
-  function goingLeft(){
-      pic.src = "images/left.jpg";
+ 
+  function homeSweetHome(){
+      pic.src = "images/housenight.jpg";
         ptext1.innerHTML = "You arrive at home";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -271,31 +271,14 @@
         b3.style.display = "none";
         b4.style.display = "none";
         b5.style.display = "none";
-        }
-
-    function goingRight(){
-       pic.src = "images/right.jpg";
-        ptext1.innerHTML = "You end up in the vault room. Every vault is locked, though, so you head back to the front desk to find the keys. ";
-        ptext2.innerHTML = "";
-        ptext3.innerHTML = "";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "Left";
-        b2.innerHTML= "Right";
-        b3.innerHTML= "Crawl in the air duct";
-        b4.innerHTML="";
-        b1.style.display = "block";
-        b2.style.display = "block";
-        b3.style.display = "block";
-        b4.style.display = "block";
-        b5.style.display = "none";
-    }
-   function backFront(){
-       pic.src = "images/front.jpg";
-        ptext1.innerHTML = "You could go through the front door and tip-toe upstairs, climb through your bedroom window.";
+        }        
+    function doorWindow(){
+       pic.src = "images/housenightzoom.jpg";
+        ptext1.innerHTML = "You could go through the front door and tip-toe upstairs, or climb through your bedroom window.";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
         ptext4.innerHTML = "So which will it be?";
-        b1.innerHTML = "Throught the front door";
+        b1.innerHTML = "Through the front door";
         b2.innerHTML= "Through the bedroom window";
         b1.style.display = "block";
         b2.style.display = "block";
@@ -303,9 +286,9 @@
         b4.style.display = "none";
         b5.style.display = "none";
         }
-        function inVault(){
-       pic.src = "images/door.jpg";
-        ptext1.innerHTML = "You need to find something to get up there";
+        function findItem(){
+       pic.src = "images/housenightwindow.jpg";
+        ptext1.innerHTML = "You might wanna find something to get up there";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "What are you gonna do?”";
         ptext4.innerHTML = "";
@@ -318,25 +301,8 @@
         b4.style.display = "none";
         b5.style.display = "none";
         }
-        function doorsUnlocked(){
-       pic.src = "images/robber.jpg";
-        ptext1.innerHTML = "Your new acquaintances are taken aback. The leader says “thanks,” and you seem to have gotten his trust. His minions look doubtfully at you, but no matter.";
-        ptext2.innerHTML = "";
-        ptext3.innerHTML = "So, what’s behind the door? Riches beyond your wildest imagination. You and the guys bring as much as you can carry in bunches of suitcases to the white van. You drive off into the distance. They drop you off with your share of $100k.";
-        ptext4.innerHTML = "What will you do with the money?";
-        b1.innerHTML = "Casino";
-        b2.innerHTML= "Charity";
-        b3.innerHTML="Doughnuts."
-        b4.innerHTML="Give to Mother";
-        b5.innerHTML="Ask Friend";
-        b1.style.display = "block";
-        b2.style.display = "block";
-        b3.style.display = "block";
-        b4.style.display = "block";
-        b5.style.display = "block";
-        }
-         function vehicleCar(){
-       pic.src = "images/car.jpg";
+        function museum(){
+       pic.src = "images/bruh.jpg";
         ptext1.innerHTML = "There's no local museum. C'mon man, you should know this.";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -348,11 +314,11 @@
         b4.style.display = "none";
         b5.style.display = "none";
          }
-         function vehicleScooter(){
-        pic.src = "images/scooter.jpg";
+         function waterPark(){
+        pic.src = "images/drowned.png";
         ptext1.innerHTML = "You drowned";
         ptext2.innerHTML= "";
-        ptext3.innerHTML = "You forgot how to swim!?!? Really??! Then why would you say water park?!!";
+        ptext3.innerHTML = "You forgot how to swim!?!? Really??! Then why would you pick the water park?!!";
         ptext4.innerHTML = "";
         b1.innerHTML = "ok, click here to try again";
         b1.style.display = "block";
@@ -361,8 +327,8 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function yea(){
-        pic.src = "images/wt.jpg";
+    function forcedFriends(){
+        pic.src = "images/missionfailed.jpg";
         ptext1.innerHTML = "Okay bye.";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "Wrong answer, go make friends.";
@@ -374,11 +340,11 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function endingFront(){
-        pic.src = "images/finish1.jpg";
+    function workout(){
+        pic.src = "images/bruh.jpg";
         ptext1.innerHTML = "You forgot your gym membership card at home";
         ptext2.innerHTML= "";
-        ptext3.innerHTML = "Try again. I beleive in you!";
+        ptext3.innerHTML = "Try again. I believe in you!";
         ptext4.innerHTML = "";
         b1.innerHTML = "redo";
         b1.style.display = "block";
@@ -387,21 +353,21 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function entranceBack(){
-        pic.src = "images/wall.jpg";
+    function climber(){
+        pic.src = "images/death.png";
         ptext1.innerHTML = "You fall to your death after climbing to the top of a tree with James";
         ptext2.innerHTML= "";
-        ptext3.innerHTML = "Ouch! Another bad ending );";
+        ptext3.innerHTML = "A painfully bad ending );";
         ptext4.innerHTML = "";
-        b1.innerHTML = "redo! redo! I beleive in you! Hey that rhymes";
+        b1.innerHTML = "redo! redo! I believe in you! Hey that rhymes";
         b1.style.display = "block";
         b2.style.display = "none";
         b3.style.display = "none";
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function entranceCeiling(){
-        pic.src = "images/fly.jpg";
+    function playgroundTime(){
+        pic.src = "images/park.jpg";
         ptext1.innerHTML = "You can't find the playground";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "Okay wait what?! This is a park! It's supposed to have a playground somewhere... is there really no playground here?";
@@ -413,21 +379,21 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function gun(){
-        pic.src = "images/van.jpg";
+    function loiter(){
+        pic.src = "";
         ptext1.innerHTML = "It eventually gets dark, too dark to find your way home and you eventually lose James in the darkness.";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "Be careful after dark";
         ptext4.innerHTML = "";
-        b1.innerHTML = "go back to when it was daytime?";
+        b1.innerHTML = "go back to when it was daytime";
         b1.style.display = "block";
         b2.style.display = "none";
         b3.style.display = "none"; 
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function knife(){
-        pic.src = "images/butter.jpg";
+    function treeAgain(){
+        pic.src = "images/death.png";
         ptext1.innerHTML = "You fall to your death after climbing to the top of the tree";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "Ouch!";
@@ -439,8 +405,8 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function squirtGun(){
-        pic.src = "images/squirtgun.jpg";
+    function punched(){
+        pic.src = "images/nightsky.jpg";
         ptext1.innerHTML = "You wake up with a bloody nose, it’s late at night and your wallet is gone.";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "Don't mess with James, he knows karate.";
@@ -452,9 +418,9 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function punchone(){00
-        pic.src = "images/punch1.jpg";
-        ptext1.innerHTML = "James: wanna just go home and hang out tomorrow?";
+    function leaving(){00
+        pic.src = "images/jamesdown.PNG";
+        ptext1.innerHTML = "James: Wanna just go home and hang out tomorrow?";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
@@ -466,8 +432,8 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function punchtwo(){
-        pic.src = "images/punch2.jpg";
+    function parted(){
+        pic.src = "images/houselight.jpg";
         ptext1.innerHTML = "You both part ways and make plans for tomorrow";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "Good ending CONGRATULATIONS!";
@@ -479,11 +445,11 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function notPunch(){
-        pic.src = "images/swat.jpg";
-        ptext1.innerHTML = "James:Well I'm getting kinda tired and it's late so I think I'm gonna go home.";
+    function foreverAlone(){
+        pic.src = "images/houselight.jpg";
+        ptext1.innerHTML = "James: Well I'm getting kinda tired and it's late, it's time to go home.";
         ptext2.innerHTML= "";
-        ptext3.innerHTML = "Forever Alone! How tragic!";
+        ptext3.innerHTML = "Forever Alone! What a tragic ENDING!";
         ptext4.innerHTML = "";
         b1.innerHTML = "keep playing by pressing here!";
         b1.style.display = "block";
@@ -492,8 +458,8 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function kick(){
-        pic.src = "images/kcik.jpg";
+    function copyStrike(){
+        pic.src = "images/gameover.jpg";
         ptext1.innerHTML = "Okay you’re about to get me copyrighted Game OVER";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "END";
@@ -505,8 +471,8 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function tackle(){
-        pic.src = "images/walll.jpg";
+    function copywritten(){
+        pic.src = "images/gameover.jpg";
         ptext1.innerHTML = "Okay you’re about to get me copyrighted Game OVER";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "END";
@@ -518,11 +484,11 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function autograph(){
-        pic.src = "images/auto.jpg";
-        ptext1.innerHTML = "Tom doesn't know what to watch either.";
+    function unreliableLeo(){
+        pic.src = "images/IDK.PNG";
+        ptext1.innerHTML = "Leo doesn't know what to watch either.";
         ptext2.innerHTML= "";
-        ptext3.innerHTML = "Try again, you can do it. Trust me I should know, I coded this game :)";
+        ptext3.innerHTML = "Try again you can do it. Trust me I should know, I coded this game :)";
         ptext4.innerHTML = "";
         b1.innerHTML = "Try once more";
         b1.style.display = "block";
@@ -531,8 +497,8 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function dance(){
-        pic.src = "images/dance.jpg";
+    function wordyMiranda(){
+        pic.src = "images/movies.jpg";
         ptext1.innerHTML = "You got caught up in a long conversation with Miranda, but now James is nowhere to be found.";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "You shouldn't neglect people like that";
@@ -544,9 +510,9 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function roit(){
-        pic.src = "images/roit.jpg";
-        ptext1.innerHTML = "Well I'm gonna have to stop you here before I get myself copywrited";
+    function copyCat(){
+        pic.src = "images/gameover.jpg";
+        ptext1.innerHTML = "Well I'm gonna have to stop you here before I get myself copyrighted";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "END";
         ptext4.innerHTML = "";
@@ -557,61 +523,9 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function airduct(){
-        pic.src = "images/airduct.jpg";
-        ptext1.innerHTML = "Due to your intelligence, you end up jumping. You miss by 5 feet. And hit your head on the table. That confuses the black ski mask men. They carry on, and you follow them. ";
-        ptext2.innerHTML= "";
-        ptext3.innerHTML = "";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "right";
-        b2.innerHTML = "left"
-        b1.style.display = "block";
-        b2.style.display = "block";
-        b3.style.display = "none";
-        b4.style.display = "none";
-        b5.style.display = "none";
-    }
-    function airduct1(){
-        pic.src = "images/heli.jpg";
-        ptext1.innerHTML = "The ski mask men run into the vault room. Suddenly, a helicopter flies up above. The men bail, and run back into their van. You assume that they are playing hide and seek and chose you as “it,” so you chase them. The blue uniformed men come back, and take you to jail. ";
-        ptext2.innerHTML= "";
-        ptext3.innerHTML = "END";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "restart";
-        b1.style.display = "block";
-        b2.style.display = "none";
-        b3.style.display = "none";
-        b4.style.display = "none";
-        b5.style.display = "none";
-    }
-    function airduct2(){
-        pic.src = "images.popo.jpg";
-        ptext1.innerHTML = "Stanley runs into the wrong room, and gets lost. Three hours later, he emerges from the room, and police are waiting for him.";
-        ptext2.innerHTML= "";
-        ptext3.innerHTML = "END";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "restart";
-        b1.style.display = "block";
-        b2.style.display = "none";
-        b3.style.display = "none";
-        b4.style.display = "none";
-        b5.style.display = "none";
-    }
-    function straet(){
-        pic.src = "images/spring.jpg";
-        ptext1.innerHTML = "Did you not just.... Those are the black ski mask men.";
-        ptext2.innerHTML= "";
-        ptext3.innerHTML = "END";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "restart";
-        b1.style.display = "block";
-        b2.style.display = "none";
-        b3.style.display = "none";
-        b4.style.display = "none";
-        b5.style.display = "none";
-    }
-    function springfield(){
-        pic.src = "images/spring.jpg";
+ 
+    function punishment(){
+        pic.src = "images/death.png";
         ptext1.innerHTML = "Your mom is waiting at the door, she slaps you so hard you die.";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "So much violence, what kind of life do you live? how have you survived this long?";
@@ -623,8 +537,8 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function passcodes(){
-        pic.src = "images/pass.jpg";
+    function instantDeath(){
+        pic.src = "images/death.png";
         ptext1.innerHTML = "Your mom is waiting for you at the front door, she slaps you so hard you die INSTANTLY";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "Woah! ok, that was a bit much.";
@@ -636,11 +550,11 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function money(){
-        pic.src = "images/fighht.jpg";
+    function success(){
+        pic.src = "images/youwin.png";
         ptext1.innerHTML = "You make it into your room and sleep the night away";
         ptext2.innerHTML= "";
-        ptext3.innerHTML = "An ending where you don't die! YAY. Congrats this is one of the Good Endings";
+        ptext3.innerHTML = "An ending where you don't die, YAY! Congrats this is one of the Good Endings";
         ptext4.innerHTML = "";
         b1.innerHTML = "play again";
         b1.style.display = "block";
@@ -649,8 +563,8 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function okay(){
-        pic.src = "images/money.jpg";
+    function missionPassed(){
+        pic.src = "images/missionpassed.png";
         ptext1.innerHTML = "You successfully climb into your room through your window";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "All that tree climbing you did as a kid finally paid off! Congrats on getting one of the Good Endings";
@@ -662,179 +576,116 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-    function casino(){
-        pic.src = "images/casino.jpg";
-        ptext1.innerHTML = "It was red! You have $200k now. You go home.";
-        ptext2.innerHTML= "";
-        ptext3.innerHTML = "Rich Ending";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "restart";
-        b1.style.display = "block";
-        b2.style.display = "none";
-        b3.style.display = "none";
-        b4.style.display = "none";
-        b5.style.display = "none";
-    }
-    function charity(){
-        pic.src = "images/charity.jpg";
-        ptext1.innerHTML = "The charity thanks you for your generosity, and as a token, pay for your specialized school. Huh. The foundation that you donated to ended up being one which tried to restore the bank.";
-        ptext2.innerHTML= "";
-        ptext3.innerHTML = "Circle of Life Ending";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "restart";
-        b1.style.display = "block";
-        b2.style.display = "none";
-        b3.style.display = "none";
-        b4.style.display = "none";
-        b5.style.display = "none";
-    }
-    function donuts(){
-        pic.src = "images/donut.jpg";
-        ptext1.innerHTML = "Buying a lifetime supply of doughnuts, you end up donating your own life to try to discover Type 3 Diabetes. ";
-        ptext2.innerHTML= "";
-        ptext3.innerHTML = "Food Coma Ending";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "restart";
-        b1.style.display = "block";
-        b2.style.display = "none";
-        b3.style.display = "none";
-        b4.style.display = "none";
-        b5.style.display = "none";
-    }
-    function mother(){
-        pic.src = "images/mother.jpg";
-        ptext1.innerHTML = "You give it to your mother who has supported you all along. She spends it all on her Saturday Bingo sessions. ";
-        ptext2.innerHTML= "";
-        ptext3.innerHTML = "END";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "restart";
-        b1.style.display = "block";
-        b2.style.display = "none";
-        b3.style.display = "none";
-        b4.style.display = "none";
-        b5.style.display = "none";
-    }
-    function friend(){
-        pic.src = "images/friend.jpg";
-        ptext1.innerHTML = "You dump it into the lake because your friend bet a sandwich that you wouldn’t. You do, and it is never to be seen again. You end up polluting the entire lake, and it is forever known as the lake of misfortune.";
-        ptext2.innerHTML= "";
-        ptext3.innerHTML = "Stanley Special Ending";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "restart";
-        b1.style.display = "block";
-        b2.style.display = "none";
-        b3.style.display = "none";
-        b4.style.display = "none";
-        b5.style.display = "none";
-    }
+ 
+ 
          //state machine
          function bclick(button){
           if(state == "intro"){
               if (button == 1){
-                  entrance();
-                  state = "entrance";
+                  meeting();
+                  state = "meeting";
                 
               }
               else if(button == 2){
-                  yea();
-                  state="yea";
+                  forcedFriends();
+                  state="forcedFriends";
               }
           }
-            else if (state == "entrance"){
+            else if (state == "meeting"){
                 if(button == 1){
-                    vehicleCar();
-                    state="vehicleCar";
+                    museum();
+                    state="museum";
                 }
             
                 else if(button ==2){
-                    vehicleScooter();
-                    state = "vehicleScooter";
+                    waterPark();
+                    state = "waterPark";
                 }
                 else if(button ==3){
-                    firstEntrance();
-                    state ="firstEntrance";
+                    locationPlace();
+                    state ="locationPlace";
                 }
             }
-
-
-            else if(state=="firstEntrance"){
+ 
+ 
+            else if(state=="locationPlace"){
                 if(button==1){
-                    endingFront();
-                    state="endingFront";
+                    workout();
+                    state="workout";
                 }
                 else if(button==2){
-                    entranceBack();
-                    state="entranceBack"
+                    climber();
+                    state="climber"
                 }
                 else if(button==3){
-                    entranceCeiling();
-                    state="entranceCeiling";
+                    playgroundTime();
+                    state="playgroundTime";
                 }        
                 else if(button==4){
-                    weapon();
-                    state="weapon";
+                    activity();
+                    state="activity";
                 }    
             } 
-
-
-            else if( state == "weapon"){
+ 
+ 
+            else if( state == "activity"){
                 if (button == 1){
-                    gun();
-                    state="gun";
+                    loiter();
+                    state="loiter";
                 }
                 else if(button ==2){
-                    knife();
-                    state="knife";
+                    treeAgain();
+                    state="treeAgain";
                 }
                 else if(button ==3){
-                    squirtGun();
-                    state="squirtGun";
+                    punched();
+                    state="punched";
                 }
                 else if(button ==4){
-                    enteringBank();
-                    state="enteringBank";
+                    movieTime();
+                    state="movieTime";
                 }
             }
-                else if(state=="enteringBank"){
+                else if(state=="movieTime"){
                     if(button ==1){
-                        punchone();
-                        state="punchone";
+                        leaving();
+                        state="leaving";
                     }
                 else if(button==2){
-                        whatNow();
-                        state="whatNow";
+                        askWho();
+                        state="askWho";
                     }
                 else if(button==3){
-                        tackle();
-                        state="tackle";
+                        copywritten();
+                        state="copywritten";
                     }
                 else if(button==4){
-                    kick();
-                    state="kick";
+                    copyStrike();
+                    state="copyStrike";
                 }
             }
-            else if(state=="whatNow"){
+            else if(state=="askWho"){
                 if(button==1){
-                    autograph();
-                    state="autograph";
+                    unreliableLeo();
+                    state="unreliableLeo";
                 }
                 else if(button==2){
-                    insideNow();
-                    state="insideNow";
+                    askTom();
+                    state="askTom";
                 }
                 else if(button==3){
-                    dance();
-                    state="dance";
+                    wordyMiranda();
+                    state="wordyMiranda";
                 }
             }
-            else if(state=="insideNow"){
+            else if(state=="askTom"){
                 if(button==1){
-                    goingLeft();
-                    state="goingLeft";
+                    homeSweetHome();
+                    state="homeSweetHome";
                 }
                 else if(button==2){
-                    roit();
-                    state="roit";
+                    copyCat();
+                    state="copyCat";
                 }
                 else if(button==3){
                     airduct();
@@ -845,133 +696,133 @@
                     state="straet";
                 }
             }
-            else if(state=="goingLeft"){
+            else if(state=="homeSweetHome"){
                 if(button==1){
-                    springfield();
-                    state="springfield";
+                    punishment();
+                    state="punishment";
                 }
                 else if(button==2){
-                    backFront();
-                    state="backFront";
+                    doorWindow();
+                    state="doorWindow";
                 }
             }
-            else if(state=="backFront"){
+            else if(state=="doorWindow"){
                 if(button==1){
-                    passcodes();
-                    state="passcodes";
+                    instantDeath();
+                    state="instantDeath";
                 }
                 else if(button==2){
-                    inVault();
-                    state="inVault";
+                    findItem();
+                    state="findItem";
                 }
             }
-
-
-            else if(state=="inVault"){
+ 
+ 
+            else if(state=="findItem"){
                 if(button==1){
-                    money();
-                    state="money";   
+                    success();
+                    state="success";   
                 }
                 else if(button==2){
-                    okay();
-                    state="okay";
+                    missionPassed();
+                    state="missionPassed";
                 }
                 else if(button==3){
                     doorsUnlocked();
                     state="doorsUnlocked";
                 }
             }
-            else if(state=="yea"){
+            else if(state=="forcedFriends"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="endingFront"){
+            else if(state=="workout"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="vehicleCar"){
+            else if(state=="museum"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
             
-            else if(state=="vehicleScooter"){
+            else if(state=="waterPark"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="entranceBack"){
+            else if(state=="climber"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="entranceCeiling"){
+            else if(state=="playgroundTime"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="gun"){
+            else if(state=="loiter"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="knife"){
+            else if(state=="treeAgain"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="squirtGun"){
+            else if(state=="punched"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="punchone"){
+            else if(state=="leaving"){
                 if(button==1){
-                    punchtwo();
-                    state="punchtwo";
+                    parted();
+                    state="parted";
                 }
                 else if(button==2){
-                    notPunch();
-                    state="notPunch"
+                    foreverAlone();
+                    state="foreverAlone"
                 
                 }
             }
-            else if(state=="punchtwo"){
+            else if(state=="parted"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="notPunch"){
+            else if(state=="foreverAlone"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="kick"){
+            else if(state=="copyStrike"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="tackle"){
+            else if(state=="copywritten"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="autograph"){
+            else if(state=="unreliableLeo"){
                 if(button==1){
                     intro();
                     state="intro";
@@ -987,25 +838,25 @@
                     state="airduct2"
                 }             
             }
-            else if(state=="springfield"){
+            else if(state=="punishment"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="passcodes"){
+            else if(state=="instantDeath"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="money"){
+            else if(state=="success"){
                 if(button=1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="okay"){
+            else if(state=="missionPassed"){
                 if(button==1){
                     intro();
                     state="intro";
@@ -1075,13 +926,13 @@
                     state="intro";
                 }
             }
-            else if(state=="dance"){
+            else if(state=="wordyMiranda"){
                 if(button==1){
                     intro();
                     state="intro";
                 }
             }
-            else if(state=="roit"){
+            else if(state=="copyCat"){
                 if(button==1){
                     intro();
                     state="intro";
@@ -1095,7 +946,7 @@
             }
            return false;
         }
-
+ 
         
 </script>
     </body>
