@@ -25,10 +25,11 @@
                     padding: 0px;
                     background-color: purple;
                     display: none;
+                    position: absolute;
+                    z-index: 1;
             }
             .dropdown:hover .dropdown-content{
                 display: block;
-                position: absolute;
             }
             .navbar .active{
                 background-color: pink
